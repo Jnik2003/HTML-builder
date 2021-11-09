@@ -62,7 +62,7 @@ function write(userInput) {
         if (err) {
             throw err;
         }
-        console.log('Записано!');
+        // console.log('Записано!');
     });
 
 }
@@ -164,6 +164,9 @@ readTemplate()
     })
     .then(() => {
         return writeTemplate('{{footer}}')
+    })
+    .then(() => {
+        return writeTemplate('{{about}}')
     })
 
 
