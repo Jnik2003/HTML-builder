@@ -69,7 +69,7 @@ fs.readdir(__dirname + '/styles', (err, data) => {
 
 function write(userInput) {
 
-    fs.appendFile(__dirname + '/project-dist/' + 'bungle.css', userInput + '\n', (err) => {
+    fs.appendFile(__dirname + '/project-dist/' + 'bundle.css', userInput + '\n', (err) => {
         if (err){
         	 throw err;
         }
